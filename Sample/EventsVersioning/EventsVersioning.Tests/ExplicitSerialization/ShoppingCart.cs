@@ -358,7 +358,7 @@ public class ShoppingCartEventsSerde
 public static class Json
 {
     public static JsonObject Object(params KeyValuePair<string, JsonNode?>[] nodes) => new(nodes);
-    public static KeyValuePair<string, JsonNode?> Node(string key, JsonNode? node) => new(key, node);
+    // public static KeyValuePair<string, JsonNode?> Node(string key, JsonNode? node) => new(key, node);
 
     public static JsonNode ToJson(this ShoppingCartId value) => value.Value;
     public static JsonNode ToJson(this ProductId value) => value.Value;
